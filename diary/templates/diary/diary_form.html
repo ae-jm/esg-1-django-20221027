@@ -1,0 +1,10 @@
+<h2>Diary</h2>
+
+<form action="" method="post" novalidate>
+    <!--method에 post라고 적어서 post형식으로 요청됨-->
+    {% csrf_token %}
+    <table>
+        {{ form.as_table }}
+    </table>
+    <input type="submit" />
+</form>
